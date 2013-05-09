@@ -1,0 +1,16 @@
+Enter Company Details <br />
+
+<%= form_for @company, :url => {:action => 'create'} do |c| %>
+
+
+	Company Name: <%= c.text_field :company_name %><br />
+	Email: <%= c.text_field :email %><br />
+	Website: <%= c.text_field :website %><br />
+	Phone Number: <%= c.text_field :phone %><br />
+	Industry Type: <%= c.text_field :industry %><br />
+	Number of Employee: <%= c.text_field :number_employee %><br />
+	Description: <%= c.text_field :description %><br />
+	<%= c.submit 'Save' %>
+	
+ <% end %>
+ 
